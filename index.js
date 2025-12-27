@@ -1,6 +1,6 @@
 let player={
-  name:"NIO",
-  chips:9
+  name:"Player",
+  chips:100
 }
 let cards = [];
 let hasBlackJack = false;

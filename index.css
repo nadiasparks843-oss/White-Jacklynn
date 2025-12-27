@@ -1,35 +1,50 @@
- body{
-    margin: 50px;
-    color: bisque;
-    background-image: url("Images/Cards.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- }
-
-
-#message-el{
-    font-style: italic;
-    
+body {
+  margin: 1rem;
+  color: bisque;
+  background-image: url("Images/Cards.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
-#Main-txt{
-    color:#c49a6a;
-    font-weight: bolder;
+@media (min-width: 768px) {
+  body {
+    margin: 2rem;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 3rem;
+    font-size: 20px;
+  }
+}
+
+#message-el {
+  font-style: italic;
+}
+
+#Main-txt {
+  color: #c49a6a;
+  font-weight: bolder;
 }
 
 #NG-btn,
-#NC-btn{
-    margin: 10px auto;
-    background-color: #2a313a;
-    color: inherit;
-    border: none;
-    height: 30px;
-    width: 130px;
-    border-radius: 15px;
-    font-weight: bold;
-    display: block;
+#NC-btn {
+  margin: 10px auto;
+  background-color: #2a313a;
+  color: inherit;
+  border: none;
+  height: 30px;
+  width: 130px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: block;
 }
