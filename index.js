@@ -1,7 +1,14 @@
-let player={
-  name:"Player",
-  chips:100
-}
+let userName = prompt("What's your name?")
+alert("Hi, " + userName + "!")
+
+let numChips= prompt("How much do you have?")
+// let numChips;
+// do{
+// numChips=prompt("How much do you have?");
+// } while (isNaN(numChips) || nmber.trim()==="");
+
+// numChips=Number(numChips);
+// let numChips= prompt("How much do you have?");
 let cards = [];
 let hasBlackJack = false;
 let isAlive = false;
@@ -11,7 +18,9 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardEl = document.getElementById("card-el");
 let playerEl=document.getElementById("player-el")
-playerEl.textContent= player.name + ": $"+ player.chips
+let userChips=document.getElementById("chips-el")
+playerEl.textContent+= userName
+userChips.textContent+= "$" + numChips
 
 let sum=0
 
