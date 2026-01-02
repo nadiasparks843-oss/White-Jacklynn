@@ -35,7 +35,7 @@ body {
   color: #c49a6a;
   font-weight: bolder;
 }
-
+/* 
 #NG-btn,
 #NC-btn {
   margin: 10px auto;
@@ -47,4 +47,25 @@ body {
   border-radius: 15px;
   font-weight: bold;
   display: block;
+} */
+
+.btn-design{
+  margin: 10px auto;
+  background-color: #2a313a;
+  color: inherit;
+  border: none;
+  height: 30px;
+  width: 130px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: block;
+}
+
+.btn-design:hover{
+  color:aliceblue;
+  scale: 1.1;
+}
+
+.btn-design:active{
+  scale: 0.95;
 }
