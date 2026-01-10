@@ -8,8 +8,7 @@ body {
   height: 100vh;
   text-align: center;
   font-weight: bold;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+ font-family: serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -27,6 +26,13 @@ body {
   }
 }
 
+header{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 3rem;
+  
+}
 #message-el {
   font-style: italic;
 }
@@ -68,4 +74,17 @@ body {
 
 .btn-design:active{
   scale: 0.95;
+}
+
+.icon{
+  /* background-color: antiquewhite; */
+text-align: right;
+max-width: 2rem;
+max-height: 2rem;
+padding: 0.5rem;
+}
+
+#Info-icon{
+  width: 30px;
+  height: 30px;
 }

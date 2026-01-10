@@ -2,6 +2,8 @@ let userName = prompt("What's your name?")
 alert("Hi, " + userName + "!")
 
 let numChips= prompt("How much do you have?")
+
+
 // let numChips;
 // do{
 // numChips=prompt("How much do you have?");
@@ -19,8 +21,8 @@ let sumEl = document.querySelector("#sum-el");
 let cardEl = document.getElementById("card-el");
 let playerEl=document.getElementById("player-el")
 let userChips=document.getElementById("chips-el")
-playerEl.textContent+= userName
-userChips.textContent+= "$" + numChips
+playerEl.textContent+=" " + userName
+userChips.textContent+= " "+ "$" + numChips
 
 let sum=0
 
@@ -60,9 +62,11 @@ function renderGame() {
   } else if (sum === 21) {
     message = "You win!(✿◕‿◕✿)";
     hasBlackJack = true;
+    alert("You got BlackJack!!")
   } else {
     message = "You lost! Bye~Bye~ 〜(￣▽￣〜)";
     isAlive = false;
+    alert("You're out of the game!")    
   }
   messageEl.textContent = message;
 }
